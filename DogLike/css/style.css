@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;	
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.list{
+	height: 630px;
+	overflow-y: scroll;
+}
+
+.likeContainer{
+  width:500px;
+  height:400px;
+  border:1px solid rgba(0,0,0,.2);
+  box-shadow: 7px 7px 4px rgba(0,0,0,.2);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.info{
+  width: 100%;
+}
+
+.info h3 {
+  margin-left: 20px;
+}
+
+.like, .dislike{
+  font-size: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border:1px solid rgba(0,0,0,.2);
+  box-shadow: 7px 7px 4px rgba(0,0,0,.2);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elements{
+	display: block;
+	width: 300px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.like:active {
+    color: green;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    -ms-transition-property: none;
+    transition-property: none;
+}
+
+.dislike:active {
+    color: red;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    -ms-transition-property: none;
+    transition-property: none;
+}
+.like:hover, .dislike:hover{
+	cursor: pointer;
+}
+
+.likeAnimation {
+    animation: moveRight 2s;
+}
+.dislikeAnimation {
+    animation: moveLeft 2s;
+}
+
+@keyframes moveRight {
+   from{}
+   to{opacity: 0; transform: rotateY(180deg) translateX(1000px);}
+}
+
+@keyframes moveLeft {
+   from{}
+   to{opacity: 0; transform: rotateY(-180deg) translateX(-1000px);}
+}
+
+#sidebar{
+	visibility: hidden;
+	background-color: grey;
+	top: 0px;
+    width: 100px;
+    bottom: 0px;
+	position: absolute;
+	transition:all 1s ease;
+}
+
+#sidebar:target{
+	visibility: visible;	
+	width: 300px;
+}
+
+#listSaved{
+	cursor: pointer;
+	font-size: 30px;
+	padding-left: 300px;
+	color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
