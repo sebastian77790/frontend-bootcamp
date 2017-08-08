@@ -1,20 +1,20 @@
-
 html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
 }
-.main-content{
- padding: 50px;
+
+.spacing{
+  padding: 50px;
   line-height: 150%;
 }
 
 @media (min-width: 768px) {
-	.navbar-brand, a{
+	.navbar-brand, li a{
 		color: white !important;
 	}
-	a:hover{
+	li a:hover{
 		color:grey !important;
 	}
 	.navbar-default {
@@ -59,6 +59,7 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   header {
     min-height: 100%;
@@ -86,40 +87,42 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+
 .come-in {
   -webkit-transform: translateY(150px);
-      -ms-transform: translateY(150px);
-          transform: translateY(150px);
+  -ms-transform: translateY(150px);
+  transform: translateY(150px);
   -webkit-animation: come-in 0.8s ease forwards;
-          animation: come-in 0.8s ease forwards;
+  animation: come-in 0.8s ease forwards;
 }
 
 .come-in:nth-child(odd) {
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
 }
 
 .already-visible {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 @-webkit-keyframes come-in {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+	transform: translateY(0);
   }
 }
 
 @keyframes come-in {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+	transform: translateY(0);
   }
 }
+
 .deepness{
 	box-shadow: 2px 2px 2px #888888;
 }
