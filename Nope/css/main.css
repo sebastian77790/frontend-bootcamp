@@ -1,0 +1,291 @@
+*, html, body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Theme
+   =================== */
+
+.header-container {
+	height:50px;
+    border-bottom: 10px solid #138D75;
+}
+
+.footer-container {
+    border-top: 10px solid #138D75;
+}
+
+.header-container,
+.footer-container{
+    background: #45B39D;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #138D75;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
