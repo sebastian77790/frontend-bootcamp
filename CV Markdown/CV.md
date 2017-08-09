@@ -70,14 +70,14 @@ Plugins, Frameworks y otros: Angular, Jquery, Bootstrap, MaterializeCss, Foundat
 
 **REFERENCIAS LABORALES:**
 
->Julián Herrera Sánchez
-Globant (Medellín-Colombia)
-Java Developer Ssr 
+>Julián Herrera Sánchez  
+Globant (Medellín-Colombia)  
+Java Developer Ssr  
 
 
->Sebastián Peláez Gallego
-GloboStudio (Medellín-Colombia)
-Analista Desarrollador
+>Sebastián Peláez Gallego  
+GloboStudio (Medellín-Colombia)  
+Analista Desarrollador  
 
 
 **REFERENCIAS PERSONALES:**
@@ -102,5 +102,5 @@ FORMACIONES ADICIONALES E INTERESES
 :   Algunas de las formas en las que uso mi tiempo libre.
 
     * Mantenimiento y construcción de computadores
-    * Música 
+    * Música :punch:
     * Investigar
