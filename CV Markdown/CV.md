@@ -18,20 +18,24 @@ Soy una persona comprometida con su trabajo y con una constante necesidad de sup
 
 ESTUDIOS
 ---------
-> **Básica**
-   **Bachiller académico**
-    *Institución Educativa Salazar y Herrera*
+> **Básica**  
+   **Bachiller académico**  
+    *Institución Educativa Salazar y Herrera*  
 
-> **Pregrado (2015-2)**
-   **Tecnólogo en Sistemas de Información**
-   Instituto Tecnológico Metropolitano (ITM)
+> **Pregrado (2015-2)**  
+   **Tecnólogo en Sistemas de Información**  
+   Instituto Tecnológico Metropolitano (ITM)  
 
-**Idiomas**:                   
-:       Español: Natal
-:    	Ingles: Avanzado
+**Idiomas**:                     
+```sh
+Español: Natal
+```
+```sh
+Ingles: Avanzado
+```
 
+`Ingles`  
 
-`Ingles`
 | Competencia | Nivel |
 | :------ | :------: |
 | Escritura | B2 |
@@ -41,12 +45,12 @@ ESTUDIOS
 
 EXPERIENCIA LABORAL
 ----------
-> Proyectos Personales
-  **Desarrollador Web**
-	He realizado diferentes proyectos personales como lo son paginas web y	aplicativos moviles.
+> Proyectos Personales  
+  **Desarrollador Web**  
+	He realizado diferentes proyectos personales como lo son paginas web y	aplicativos moviles.  
 
-> Globo Studio
-  **Analista Desarrollador**
+> Globo Studio  
+  **Analista Desarrollador**  
 
 ```sh			
 Programas manejados: Visual Studio, SQL Server, SourceTree(GIT), MySQL WorkBench, IntelliJ IDEA, Atom.IO ...
@@ -78,13 +82,13 @@ Analista Desarrollador
 
 **REFERENCIAS PERSONALES:**
 
->Clara López
-Hermana (Medellín-Colombia)
-Médico/Cirujano
+>Clara López  
+Hermana (Medellín-Colombia)  
+Médico/Cirujano  
 
->Mario López
-Hermano (Medellín-Colombia)
-Profesional de Equipos informáticos 
+>Mario López  
+Hermano (Medellín-Colombia)  
+Profesional de Equipos informáticos   
 
 
 
@@ -98,5 +102,5 @@ FORMACIONES ADICIONALES E INTERESES
 :   Algunas de las formas en las que uso mi tiempo libre.
 
     * Mantenimiento y construcción de computadores
-    * Crear música :metal:
+    * Música 
     * Investigar
