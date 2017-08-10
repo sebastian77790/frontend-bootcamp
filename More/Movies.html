@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://fb.me/react-15.1.0.js"></script>
+  <script src="https://fb.me/react-dom-15.1.0.js"></script>
+
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+	body {
+	  background: white;
+	  font-family: sans-serif;
+	}
+
+	.container {
+	  background: papayawhip;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	}
+
+	.list {
+	  padding: 0;
+	  margin: 0;
+	  list-style: none;
+	}
+
+	.item {
+	  border: 1px solid black;
+	  margin-bottom: 5px;
+	}
+
+	.item > h2 {
+	  font-size: 15px;
+	}
+
+  </style>
+</head>
+<body>
+  
+  <section class="container">
+    <ul class="list" id="list">
+      
+    </ul>
+  </section>
+
+  <div id="root"></div>
+  
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+	const url = "https://api.themoviedb.org/3/discover/movie?api_key=461db800c27fdda30417dbf9e3f33b67&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
+	const list = document.getElementById("list");
+
+	function createTitle(title) {
+	  const titleEl = document.createElement("h2");
+	   titleEl.innerHTML = title + "";
+	  return titleEl;
+	}
+
+	function createImage(imageURL) {
+	  const image = document.createElement("img");
+	  image.setAttribute('src', imageURL);
+	  image.setAttribute('height', 150);
+	  
+	  return image;
+	}
+
+	function createItem(movie) {
+	  const urlImage = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+	  const image = createImage(urlImage);
+	  const title = createTitle(movie.title);
+	  const el = document.createElement("li");
+	  el.classList.add('item');
+	  el.appendChild(title);
+	  el.appendChild(image);
+	  return el;
+	}
+
+	function createList(results) {
+	  results.forEach(function (el) {
+		list.appendChild(createItem(el));
+	  });
+
+	}
+
+	function fetchData() {
+	  fetch(url)
+	  .then(function(response) {
+		console.log("fetch from the localstorage");
+		//console.log(response.staatus);
+		return response.json()
+	  })
+	  .then(function(json) {
+		//console.log(json);
+		console.log("fetch from server")
+		const { results } = json;
+		localStorage.setItem("results", JSON.stringify(results));
+		createList(results);
+	  })
+	}
+
+	if (localStorage.getItem("results")) {
+	  const results = JSON.parse(localStorage.getItem("results"));
+	  createList(results);
+	} else {
+	  fetchData();
+	}
+	
+	});
+  </script>
+</body>
+</html>

@@ -3,6 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
+  line-height: 1.8;
+  color: #818181;
 }
 
 .spacing{
@@ -127,3 +129,44 @@ header .header-content .header-content-inner p {
 .deepness{
 	box-shadow: 2px 2px 2px #888888;
 }
+
+.rounded-img{
+	margin-top: -60px; 
+	width:100px; 
+	box-shadow: 0 0 0 4px grey;
+	z-index:1000;
+}
+
+#googleMap{
+	height:535px;
+	width:100%;
+}
+
+ h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .container-fluid-services {
+      padding: 60px 50px;
+  }
+  .logo-small {
+      color: blue;
+      font-size: 50px;
+  }
+  .round-service{
+	  box-shadow: 0 0 0 3px #EF7124;
+	  border-radius: 5px;
+  }
+  .padding-between{
+	  padding-bottom: 50px;
+  }
